@@ -1,10 +1,9 @@
-//your JS code here. If required.
-document.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const time = document.createElement('p');
+    time.innerText = new Date().toLocaleString();
     time.id = 'timer';
     document.body.appendChild(time);
-    
-    setInterval(() => {
+    setTimeout(() => {
         time.innerText = new Date().toLocaleString();
-    }, 1000);
+    }, 100);
 });
