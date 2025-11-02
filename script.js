@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     time.innerText = new Date().toLocaleString();
     time.id = 'timer';
     document.body.appendChild(time);
-    setTimeout(() => {
+    setInterval(() => {
         time.innerText = new Date().toLocaleString();
     }, 100);
 });
